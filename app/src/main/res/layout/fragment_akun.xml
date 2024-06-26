@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AkunFragment"
+    android:id="@+id/frameakun"
+    android:background="@color/background_primary">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center|start"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/foto_profil"
+            android:layout_marginStart="40dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/CircularImageView"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Adam Al Ghifari"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/emailTextView"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_height="wrap_content"
+                android:text="adam@gmail.com" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Line Separator -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="155dp"
+        android:background="@drawable/vector_line"/>
+
+    <!-- List Menu Item -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEditProfile"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/menu_akun_selected"
+            android:drawableStart="@drawable/vector_edit_profil"
+            android:text="Edit Profil"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+            android:paddingStart="30dp"
+            android:gravity="start|center_vertical"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_semibold" />
+
+        <!-- Line Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background_primary"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPostinganSaya"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/menu_akun_selected"
+            android:drawableStart="@drawable/vector_postingan_saya"
+            android:text="Postingan Saya"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+            android:paddingStart="30dp"
+            android:gravity="start|center_vertical"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/poppins_semibold" />
+
+        <!-- Line Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background_primary"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRiwayatBarter"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/menu_akun_selected"
+            android:drawableStart="@drawable/vector_riwayat_barter"
+            android:text="Barang Terjual"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+            android:paddingStart="30dp"
+            android:gravity="start|center_vertical"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/poppins_semibold" />
+
+        <!-- Line Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/vector_line"/>
+
+    </LinearLayout>
+
+    <!-- Logout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogout"
+            android:textColor="#E56768"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/menu_akun_selected"
+            android:drawableStart="@drawable/vector_logout"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+            android:paddingStart="30dp"
+            android:gravity="start|center_vertical"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/poppins_semibold" />
+    </LinearLayout>
+
+
+    <!-- Logout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="650dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="App Version "
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v 1.0"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+</FrameLayout>

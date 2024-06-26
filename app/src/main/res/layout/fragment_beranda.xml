@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BerandaFragment"
+    android:background="@color/background_primary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Top Section-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/logo_bartas_beranda"
+                    android:contentDescription="@string/app_name"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Halo"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_gravity="start"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/tv_nama_pengguna"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nama_pengguna"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchViewberanda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/search_border"
+                android:queryHint="Cari Barang"
+                app:queryHint="Cari Barang"
+                app:iconifiedByDefault="false"
+                android:focusable="false"
+                android:queryBackground="@android:color/transparent"/>
+
+            <!--Fitur Posting-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_posting"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:background="@color/blue"/>
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="start|center"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/vector_plus"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:layout_gravity="center|center_horizontal"
+                            android:layout_marginEnd="32dp"
+                            android:text="Posting Barang"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Temukan Penawaran dan Manfaat Menarik"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="end"
+                        android:layout_margin="12dp"
+                        android:src="@drawable/gambar_fitur_post"/>
+            </androidx.cardview.widget.CardView>
+
+            <!--Kategori-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="35dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/kategori"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_elektronik"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="@color/abu"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="5dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@color/abu">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/icon_elektronik"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/elektronik" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/elektronik"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@font/poppins_semibold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_aksesoris"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="@color/abu"
+                    android:layout_margin="5dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@color/abu">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/icon_aksesoris"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/aksesoris"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/aksesoris"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_perabotan"
+                    android:layout_width="70dp"
+                    app:cardBackgroundColor="@color/abu"
+                    android:layout_height="70dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="5dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@color/abu">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/icon_perabotan"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/perabotan"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/perabotan"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_fashion"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:cardBackgroundColor="@color/abu"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="5dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@color/abu">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/icon_fashion"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/fashion"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/fashion"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+            <!--Rekomendasi-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/rekomendasi"
+                    android:textColor="@color/black"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_lihat_semua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/background_transparent"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/lihat_semua"
+                    android:textAllCaps="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textColor="@color/blue"/>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewRekomendasi"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

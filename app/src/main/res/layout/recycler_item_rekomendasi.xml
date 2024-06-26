@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/recCard"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="14dp"
+        android:padding="8dp"
+        app:cardElevation="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/abu"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ic_favorit_bulat">
+                <CheckBox
+                    android:id="@+id/imageViewFavorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:button="@drawable/selector_favorit"/>
+            </LinearLayout>
+            <!-- Gambar -->
+            <ImageView
+                android:id="@+id/recImage"
+                android:layout_width="75dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-24dp"
+                android:src="@drawable/fashion_nb_997"/>
+
+            <!-- Merk -->
+            <TextView
+                android:id="@+id/recMerk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/black"
+                android:text="New Balance 997"
+                android:textSize="10sp"/>
+
+            <!-- Harga -->
+            <TextView
+                android:id="@+id/recHarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:gravity="center"
+                android:layout_marginTop="-5dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Rp500.000"
+                android:textSize="10sp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>

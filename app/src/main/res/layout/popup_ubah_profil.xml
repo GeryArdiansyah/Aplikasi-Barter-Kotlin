@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="170dp"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:background="@drawable/popup_post"
+    android:backgroundTint="#FFFFFF">
+
+
+    <TextView
+        android:id="@+id/txtubahprofil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apakah Yakin?\nIngin Ubah Profil"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="18dp"
+        android:layout_marginTop="33dp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtubahprofil"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Ya"
+            android:backgroundTint="@color/blue"
+            android:background="@drawable/rounded_button_logout"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_semibold"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_no"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Tidak"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/red"
+            android:background="@drawable/rounded_button_logout"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

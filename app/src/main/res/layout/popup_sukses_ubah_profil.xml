@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="170dp"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:background="@drawable/popup_post"
+    android:backgroundTint="#FFFFFF">
+
+    <TextView
+        android:id="@+id/txt_post1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profil Berhasil Diubah!"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textSize="18dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_post1"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_okay"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Okay"
+            android:textAlignment="center"
+            android:backgroundTint="@color/blue"
+            android:background="@drawable/rounded_button_logout"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_semibold"
+            android:textAllCaps="false"
+             />
+
+    </LinearLayout>
+
+</RelativeLayout>

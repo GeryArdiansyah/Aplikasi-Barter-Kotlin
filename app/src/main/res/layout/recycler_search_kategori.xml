@@ -1,0 +1,66 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="160dp"
+    android:layout_height="170dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="14dp"
+    android:padding="8dp"
+    android:id="@+id/cardView"
+    app:cardBackgroundColor="@color/abu"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/ic_favorit_bulat">
+            <CheckBox
+                android:id="@+id/imageViewFavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:button="@drawable/selector_favorit"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="-20dp"
+            android:src="@drawable/elektronik_ac_samsung" />
+
+        <!-- Merk -->
+        <TextView
+            android:id="@+id/merk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:text="AC Samsung"
+            android:textSize="10sp"/>
+
+        <!-- Harga -->
+        <TextView
+            android:id="@+id/harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Rp500.000"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

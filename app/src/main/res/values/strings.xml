@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BartasApps</string>
+    <string name="Halo">Halo, </string>
+
+    <string name="elektronik">Elektronik</string>
+    <string name="fashion">Fashion</string>
+    <string name="aksesoris">Aksesoris</string>
+    <string name="perabotan">Perabotan</string>
+
+    <string name="pilih_kategori">Pilih Kategori</string>
+
+    <string name="nama_pengguna">Nama Pengguna</string>
+    <string name="kategori">Kategori</string>
+    <string name="rekomendasi">Rekomendasi</string>
+    <string name="lihat_semua">Lihat Semua</string>
+    <string name="google_client_id">783421606785-e2fil2h6u0fchskmvtumkcovkd52vk6a.apps.googleusercontent.com</string>
+</resources>

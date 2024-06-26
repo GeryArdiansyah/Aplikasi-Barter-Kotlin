@@ -1,0 +1,93 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imagepost"
+            android:layout_width="130dp"
+            android:layout_height="90dp"
+            android:src="@drawable/fashion_nb_997"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Brand text view -->
+        <TextView
+            android:id="@+id/txtbrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SKECHERS GO RUN"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_semibold"
+            app:layout_constraintTop_toTopOf="@id/imagepost"
+            app:layout_constraintStart_toEndOf="@id/imagepost"
+            android:layout_marginTop="15dp"/>
+
+        <!-- Price text view -->
+        <TextView
+            android:id="@+id/txtprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp560.000"
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            app:layout_constraintTop_toBottomOf="@id/txtbrand"
+            app:layout_constraintStart_toEndOf="@id/imagepost"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Buttons layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/txtprice"
+            app:layout_constraintStart_toEndOf="@id/imagepost"
+            android:layout_marginTop="30dp">
+
+            <!-- Sold Out button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnsoldout"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Sold out"
+                android:textAllCaps="false"
+                android:textColor="@color/red"
+                android:textSize="12sp"
+                android:background="@drawable/button_outline_blue"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- Change (Ubah) button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnubah"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Ubah"
+                android:textAllCaps="false"
+                android:textColor="@color/blue"
+                android:textSize="12sp"
+                android:background="@drawable/button_outline_blue"
+                android:layout_marginEnd="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnhapus"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Hapus"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:background="@drawable/button_outline_blue"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

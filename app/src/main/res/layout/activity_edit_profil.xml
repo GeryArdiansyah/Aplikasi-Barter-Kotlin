@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarBack"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:navigationIcon="@drawable/vector_back">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profil"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_gravity="center"/>
+
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageViewFotoProfil"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/foto_profil"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/CircularImageView"/>
+
+            <ImageButton
+                android:id="@+id/btnEditFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_edit_foto"
+                android:layout_marginTop="140dp"
+                android:layout_marginLeft="130dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Username" />
+
+                <TextView
+                    android:id="@+id/usernm"
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text_outline"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Depan"
+                    android:fontFamily="@font/poppins_semibold"/>
+
+                <EditText
+                    android:id="@+id/editTextFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:fontFamily="@font/poppins_medium"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/edit_text_outline"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Belakang"
+                    android:fontFamily="@font/poppins_semibold"/>
+
+                <EditText
+                    android:id="@+id/editTextLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:fontFamily="@font/poppins_medium"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/edit_text_outline"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Other Information Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <TextView
+                android:id="@+id/emailaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_outline"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <!-- Radio Buttons for Gender -->
+
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioLakiLaki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pria"
+                    app:buttonTint="@color/blue"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="160dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioPerempuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wanita"
+                    app:buttonTint="@color/blue"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"/>
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Lahir"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextTanggalLahir"
+                android:inputType="none"
+                android:hint="Pilih Tanggal"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:background="@drawable/edit_text_outline"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor Telepon"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <EditText
+                android:id="@+id/editTextNomor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:background="@drawable/edit_text_outline"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <EditText
+                android:id="@+id/editTextAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:background="@drawable/edit_text_outline"
+                android:layout_marginBottom="10dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSimpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Simpan"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/blue"
+                app:cornerRadius="8dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

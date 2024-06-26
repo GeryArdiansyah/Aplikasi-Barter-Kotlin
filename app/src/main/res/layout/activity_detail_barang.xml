@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarBack"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/vector_back">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Detail Barang"
+                android:textSize="24sp" />
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ic_favorit_bulat">
+                <CheckBox
+                    android:id="@+id/imageViewFavorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:button="@drawable/selector_favorit"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="340dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"
+        android:background="@drawable/button_outline_blue">
+
+        <ImageView
+            android:id="@+id/imageViewBarang"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fashion_nb_997" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_above="@id/llChatPelapak">
+
+        <TextView
+            android:id="@+id/textView3Nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="New Balance 530"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewHrg"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:text="Rp$itemPrice"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/red"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewdes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Deskripsi"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Highlight : Classic New Balance running style\nEveryday look\nMaterials​: Fabric/rubber\nCategory: Sneaker"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+        <TextView
+            android:id="@+id/textViewpelapak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Pelapak :  $namaPelapak"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Yogyakarta"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llChatPelapak"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="210dp"
+        android:background="@drawable/button_blue"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <!-- Gambar -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/selector_chat"
+            android:layout_gravity="center"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Chat Pelapak"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+    </LinearLayout>
+</LinearLayout>

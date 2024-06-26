@@ -1,0 +1,10 @@
+<resources>
+    font/poppins_bold.xml
+    <string-array name="kategori_barang" fontFamily="@font/poppins_semibold">
+        <item>Pilih Kategori</item>
+        <item>Elektronik</item>
+        <item>Aksesoris</item>
+        <item>Perabotan</item>
+        <item>Fashion</item>
+    </string-array>
+</resources>

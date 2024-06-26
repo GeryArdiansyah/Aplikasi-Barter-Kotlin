@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:id="@+id/cardViewwishlist"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="16dp"
+    android:layout_marginHorizontal="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/imagewishlist"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/fashion_nb_997"
+            android:scaleType="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <CheckBox
+            android:id="@+id/buttonwishlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="13dp"
+            android:background="@drawable/ic_favorit_bulat"
+            android:button="@drawable/selector_favorit"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/merkwishlist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="20dp"
+            android:text="New Balance 530"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.118"
+            app:layout_constraintStart_toEndOf="@+id/imagewishlist"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/hargawishlist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="39dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:text="Rp 740.000"
+            android:textSize="14sp"
+            android:textColor="#EE0000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintStart_toEndOf="@+id/imagewishlist"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="250dp"
+        android:background="@drawable/button_blue"
+        android:orientation="horizontal">
+
+        <!-- Gambar -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:src="@drawable/selector_chat"
+            android:layout_gravity="center_vertical"
+            app:tint="@color/white" />
+
+        <!-- Teks -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Chat Pelapak"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

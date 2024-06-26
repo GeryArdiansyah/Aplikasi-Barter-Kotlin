@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="370dp"
+    android:layout_height="178dp"
+    android:layout_gravity="bottom|center"
+    android:layout_marginBottom="60dp"
+    android:background="@drawable/popup_post">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_kamera"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_button_logout"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/ic_kamera"
+                    android:paddingTop="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:text="Kamera"
+                    android:fontFamily="@font/poppins_regular"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_gambar"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_button_logout"
+                    android:drawableTop="@drawable/ic_gallery"
+                    android:paddingTop="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:text="Gambar"
+                    android:fontFamily="@font/poppins_regular"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_lokasi"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_button_logout"
+                    android:drawableTop="@drawable/ic_lokasi"
+                    android:paddingTop="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:text="Lokasi"
+                    android:fontFamily="@font/poppins_regular"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

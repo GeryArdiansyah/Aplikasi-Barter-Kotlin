@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_above="@id/card_view">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="65dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="REGISTER"
+            android:textColor="@color/white"
+            android:textSize="36sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="199dp"
+            android:contentDescription="Bartas Logo"
+            android:src="@drawable/logo_bartas_login" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="28dp"
+        android:layout_marginBottom="-20dp"
+        android:id="@+id/card_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="530dp"
+            android:orientation="vertical"
+            android:background="@color/shape"
+            android:padding="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="3dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:textColorHint="@color/input">
+
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="textPersonName"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="16sp"
+                        android:padding="12dp"
+                        android:textColor="@color/black"
+                        android:background="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_nm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="3dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutNamaLengkap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Lengkap"
+                    android:textColorHint="@color/input">
+                    <EditText
+                        android:id="@+id/nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="text"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="16sp"
+                        android:padding="12dp"
+                        android:textColor="@color/black"
+                        android:background="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="3dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutNamaEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:textColorHint="@color/input">
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="textEmailAddress"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="16sp"
+                        android:padding="12dp"
+                        android:textColor="@color/black"
+                        android:background="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="3dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutNamaPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    app:passwordToggleEnabled="true"
+                    android:textColorHint="@color/input">
+
+                    <EditText
+                        android:id="@+id/pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="textPassword"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="16sp"
+                        android:padding="12dp"
+                        android:textColor="@color/black"
+                        android:background="@color/white"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_konfirmasipass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="3dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutNamaKonPas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Konfirmasi Password"
+                    app:passwordToggleEnabled="true"
+                    android:textColorHint="@color/input">
+
+                    <EditText
+                        android:id="@+id/konfirmasipass"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="textPassword"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="16sp"
+                        android:padding="12dp"
+                        android:textColor="@color/black"
+                        android:background="@color/white"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Register"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/blue"
+                app:cornerRadius="8dp"
+                app:elevation="3dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sudah memiliki akun?"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="13dp"
+                    android:layout_marginStart="8dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnLogin"
+                    android:layout_width="60dp"
+                    android:layout_height="21dp"
+                    android:text="Login"
+                    android:textColor="@color/blue"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/background_transparent"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textAllCaps="false"
+                    android:focusable="true"
+                    android:clickable="true"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

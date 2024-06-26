@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "783421606785",
+    "project_id": "aplikasibarter",
+    "storage_bucket": "aplikasibarter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783421606785:android:fbcd9981047b2cf64cb680",
+        "android_client_info": {
+          "package_name": "com.bartas.aplikasibarter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy9dmw1OusXiIJGRNupq61T9WaIFU63HU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

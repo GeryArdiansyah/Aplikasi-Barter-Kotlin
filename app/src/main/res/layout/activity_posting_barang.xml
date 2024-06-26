@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".PostingBarangActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarBack"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/vector_back">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Posting Barang"
+                android:textSize="24sp" />
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/imageViewPosting"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:onClick="onImageClick"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fashion_nb_997" />
+
+        <Button
+            android:id="@+id/changeImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:backgroundTint="#37000000"
+            android:fontFamily="@font/poppins_semibold"
+            android:onClick="onChangeImageClick"
+            android:text="Ubah" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="25dp"
+            android:text="Deskripsi Barang"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp">
+
+            <EditText
+                android:id="@+id/nama_barang"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Nama Barang"
+                android:inputType="text"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/input"
+                android:background="@color/abu" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_kategori"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spinnerkategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:background="@color/abu"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColorHint="@color/input"
+                    android:entries="@array/kategori_barang"
+                    android:dropDownItemStyle="@style/CustomSpinnerItemStyle"/>
+
+                <ImageView
+                    android:id="@+id/icon_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/vector_drop_down"
+                android:padding="8dp"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp">
+
+            <EditText
+                android:id="@+id/harga_barang"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Harga barang"
+                android:inputType="number"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/input"
+                android:background="@color/abu"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp">
+
+            <EditText
+                android:id="@+id/deskripsi_barang"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Deskripsi"
+                android:inputType="text"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/input"
+                android:background="@color/abu"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_lokasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/lokasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Lokasi"
+                    android:inputType="text"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/input"
+                    android:background="@color/abu"
+                    android:maxLines="5"/>
+
+                <ImageView
+                    android:id="@+id/locationIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/abu"
+                    android:padding="12dp"
+                    android:src="@drawable/vector_location"
+                    android:clickable="true"
+                    android:onClick="onLocationIconClick" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnpajangbarang"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:text="Pajang Barang"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/blue"
+            app:cornerRadius="20dp"
+            app:elevation="3dp"/>
+    </LinearLayout>
+</LinearLayout>
+
